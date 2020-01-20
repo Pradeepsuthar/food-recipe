@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/logog.png" type="image/x-icon">
+    <title>foodmagic</title>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font-awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="container-fluid navbar shadow">
+        <div class="row">
+          <div class="col-sm-12 col-md-2 col-lg-2">
+                <a href="index.html">
+                    <div class="brand">
+                        <img src="images/logog.png" alt="foodmagic">
+                    </div>
+                </a>
+          </div>
+          <div class="col-sm-12 col-md-9 col-lg-9">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a  href="#about-us">About Us</a></li>
+                <li><a  href="#contact-us">Contact Us</a></li>
+              </ul>
+          </div>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <img class="food-banner" src="images/food-banner.png" alt="food-banner">
+
+    <div class="order-section">
+      <!-- Trigger/Open The Modal -->
+        <button class="order-btn" id="myBtn"><i class="upload-icon"></i> Upload Your Recipe</button>     
+    </div>
+     <!-- The Modal -->
+     <div id="myModal" class="modal">
+        <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1 class="text-center">Upload Your Recipe</h1><br><hr><br>
+            <div class="">
+              <form id="uploadRecipeForm" action="data/insert.php">
+
+                  <div class="for-Food-title">
+                      <input id="RecipeTitle" name="RecipeTitle" class="input-filed" type="text" placeholder="Food Title">
+                  </div><br>
+                  <div id="vegOrNonVeg" name="vegOrNonVeg">
+                      <label class="container">Vegetarian
+                          <input id="veg" name="veg" class="veg" type="radio" name="radio">
+                          <span class="checkmark"></span>
+                      </label>
+                      <label class="container">
+                             Non Vegetarian
+                          <input id="non_veg" name="non_veg" class="non-veg" type="radio" name="radio">
+                          <span class="checkmark"></span>
+                        </label>
+                  </div>
+                  <div class="for-location">
+                      <input id="Location" name="Location" class="input-filed" type="text" placeholder="Famous at Location">
+                  </div><br>
+                  <div class="for-recipe">
+                      <textarea id="Recipe" name="Recipe" class="input-filed" id="subject" name="subject" placeholder="Type your Recipe here..." style="width: 100%;height:200px"></textarea>
+                  </div><br>
+                  <div class="sharedBy">
+                      <input id="shareBy" name="shareBy" class="input-filed" type="text" placeholder="Enter your Name">
+                  </div><br>
+                  <div class="for-submit-btn text-center">
+                      <button id="uploadRecipe" name="uploadRecipe" class="primary-btn">Upload</button>
+                  </div>
+
+                  
+              </form>
+            </div>
+          </div>
+        </div>
+
+    <!-- search-food -->
+    <div class="search-food">
+        <div class="search-bar">
+            <input class="search-input" type="text" placeholder="Search your favourite food...">
+        </div>
+    </div>
+
+    <!-- product-section -->
+    <div class="product-section">
+        <h1 class="p-2">Best Delicious Food Recipes</h1>
+        
+     
+            <div class="row" id="food-product">
+
+              <div class="col-sm-12 col-md-3 col-lg-3 p-2">
+                <div class="card">
+                    <a href="food-recipe.html">
+                        <img src="images/asian-food-bowl-cuisine-699953.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                        <h4><b><i class="fa fa-fire"></i> Asparagus Barbecue bbq</b></h4> 
+                        <p><i class="fa fa-eye"></i> View </p>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3 p-2">
+                <div class="card">
+                    <a href="#">
+                        <img src="images/asparagus-barbecue-bbq-675951.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                      <h4><b><i class="fa fa-fire"></i> Asparagus Barbecue bbq</b></h4> 
+                      <p><i class="fa fa-eye"></i> View </p> 
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3 p-2">
+                <div class="card">
+                    <a href="#">
+                        <img src="images/beef-bread-buns-1633578.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                      <h4><b><i class="fa fa-fire"></i> Beef Bread Buns</b></h4> 
+                      <p><i class="fa fa-eye"></i> View </p>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3 p-2">
+                <div class="card">
+                    <a href="#">
+                        <img src="images/blur-close-up-dairy-product-376464.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                      <h4><b><i class="fa fa-fire"></i> Blur close up dairy</b></h4> 
+                      <p><i class="fa fa-eye"></i> View </p>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+            
+            </div>
+
+            <div class="row" id="food-product">
+
+              <div class="col-sm-12 col-md-3 col-lg-3 p-2">
+                <div class="card">
+                    <a href="food-recipe.html">
+                        <img src="images/asian-food-bowl-cuisine-699953.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                        <h4><b><i class="fa fa-fire"></i> Asparagus Barbecue bbq</b></h4> 
+                        <p><i class="fa fa-eye"></i> View </p>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3 p-2">
+                <div class="card">
+                    <a href="#">
+                        <img src="images/asparagus-barbecue-bbq-675951.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                      <h4><b><i class="fa fa-fire"></i> Asparagus Barbecue bbq</b></h4> 
+                      <p><i class="fa fa-eye"></i> View </p> 
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3 p-2">
+                <div class="card">
+                    <a href="#">
+                        <img src="images/beef-bread-buns-1633578.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                      <h4><b><i class="fa fa-fire"></i> Beef Bread Buns</b></h4> 
+                      <p><i class="fa fa-eye"></i> View </p>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3 p-2">
+                <div class="card">
+                    <a href="#">
+                        <img src="images/blur-close-up-dairy-product-376464.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                      <h4><b><i class="fa fa-fire"></i> Blur close up dairy</b></h4> 
+                      <p><i class="fa fa-eye"></i> View </p>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+            
+            </div>
+
+            <div class="row" id="food-product">
+
+              <div class="col-sm-12 col-md-3 col-lg-3 p-2">
+                <div class="card">
+                    <a href="food-recipe.html">
+                        <img src="images/asian-food-bowl-cuisine-699953.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                        <h4><b><i class="fa fa-fire"></i> Asparagus Barbecue bbq</b></h4> 
+                        <p><i class="fa fa-eye"></i> View </p>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3 p-2">
+                <div class="card">
+                    <a href="#">
+                        <img src="images/asparagus-barbecue-bbq-675951.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                      <h4><b><i class="fa fa-fire"></i> Asparagus Barbecue bbq</b></h4> 
+                      <p><i class="fa fa-eye"></i> View </p> 
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3 p-2">
+                <div class="card">
+                    <a href="#">
+                        <img src="images/beef-bread-buns-1633578.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                      <h4><b><i class="fa fa-fire"></i> Beef Bread Buns</b></h4> 
+                      <p><i class="fa fa-eye"></i> View </p>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3 p-2">
+                <div class="card">
+                    <a href="#">
+                        <img src="images/blur-close-up-dairy-product-376464.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                      <h4><b><i class="fa fa-fire"></i> Blur close up dairy</b></h4> 
+                      <p><i class="fa fa-eye"></i> View </p>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+            
+            </div>
+
+
+
+
+        </div>
+
+      
+
+<!-- Footer -->
+<footer class="p-3 text-center">
+  <p>Copyright © 2013-2019 Foodmagic Company. All rights reserved.</p>
+</footer>
+        
+<!--  -->
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>

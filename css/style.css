@@ -1,0 +1,485 @@
+/* 
+xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+
+*/
+
+/* Sample */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* //Sample */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+  }
+
+/* For mobile phones - screens less than 768px wide*/
+[class*="col-"] {
+    width: 100%;
+  }
+  
+/* for tablets - screens equal to or greater than 768px wide */  
+  @media only screen and (min-width: 0px) {
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+  }
+
+/* for small laptops - screens equal to or greater than 992px wide */
+  @media only screen and (min-width:  768px ) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+  }
+
+
+/* for laptops and desktops - screens equal to or greater than 1200px wide */
+  @media only screen and (min-width: 992px  ) {
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+  }
+
+  
+/* Padding */
+.p{
+    padding: 10px;
+  }
+  .p-2{
+    padding: 20px;
+  }
+  .p-3{
+    padding: 30px;
+  }
+  .p-4{
+    padding: 40px;
+  }
+  .p-5{
+    padding: 50px;
+  }
+
+  /* Margin */
+  .m{
+    margin: 10px;
+  }
+  .m-2{
+    margin: 20px;
+  }
+  .m-3{
+    margin: 30px;
+  }
+  .m-4{
+    margin: 40px;
+  }
+  .m-5{
+    margin: 50px;
+  }
+  /* Margin Top */
+  .mt{
+    margin-top: 10px;
+  }
+  .mt-2{
+    margin-top: 20px;
+  }
+  .mt-3{
+    margin-top: 30px;
+  }
+  .mt-4{
+    margin-top: 40px;
+  }
+  .mt-5{
+    margin-top: 50px;
+  }
+
+.shadow{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+
+  /* Navigation */
+  .navbar{
+      background-color: black;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+  }
+  /* Brand Logo */
+.brand img{
+    padding-left: 80px;
+    margin-top: 5px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+}
+.back-btn img{
+  padding-left: 50px;
+  margin: 10px;
+  padding: 30px auto;
+  width: 200px;
+  height: 30px;
+  cursor: pointer;
+}
+/* //Brand Logo */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  li a:hover:not(.active) {
+    color: #FFBE0D;
+  }
+  
+  .active {
+    color: #FFBE0D;
+  }
+
+
+  /* Food Banner */
+  .food-banner{
+    max-width: 100%;
+    height: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .order-section{
+      padding: 40px;
+      text-align: center;
+  }
+
+  .order-btn{
+    background-color: #FFBE0D;
+    border: none;
+    color: white;
+    padding: 15px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .order-btn:focus{
+      outline: 0;
+  }
+  
+  .order-btn:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: rgb(247, 186, 18); 
+    color: white;
+  }
+  
+  /* Modal btn */
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  /* //Modal btn */
+
+  /* Input Filed */
+  .input-filed{
+    width: 100%;
+    height: 48px;
+    padding: 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F1F3F4;
+}
+
+.input-filed:focus{
+    outline: 0;
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(40, 40, 41, 0.1);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(50, 51, 51, 0.1);
+}
+  /* //Input Filed */
+
+  /* Buttons */
+
+  .primary-btn{
+    background-color: #fff;
+    border: none;
+    color: rgb(26, 25, 25);
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 6px 4px;
+    cursor: pointer;
+    border-radius: 40px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .primary-btn:focus{
+    outline: none;
+  }
+  .primary-btn:hover {
+    background-color: #F1F3F4;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.20),0 17px 50px 0 rgba(0,0,0,0.10);
+  }
+
+  /* //Buttons */
+
+  .search-food{
+    width: 100%; 
+    height: 10vh;
+    position: relative;
+  }
+  /* food Search Bar */
+.search-bar .search-input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 48px;
+    padding: 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F1F3F4;
+    background-image: url('../images/search-icon.png');
+    background-size: 30px 30px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 12px 20px 12px 45px;
+}
+
+.search-bar .search-input:focus{
+    outline: 0;
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(40, 40, 41, 0.1);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(50, 51, 51, 0.1);
+}
+/* //Food Search Bar */
+
+  /* Card */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+  }
+  .card img{
+      height: 300px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  }
+  
+  .card-container{
+    padding: 10px;
+  }
+  /* //Card */
+
+  /* Food-Recipe */
+
+  .left-recipe-img-sec{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .grocery{
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+  
+  .right-recipe-img-sec{
+    margin: 20px auto;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .recipe-food-img{
+      width: 100%;
+      height: 500px;
+  }
+
+  /* Checkbox */
+
+  /* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container .veg:checked ~ .checkmark {
+  background-color: green;
+}
+.container .non-veg:checked ~ .checkmark {
+  background-color: red;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.upload-icon{
+  background-image: url('../images/Upload-Information-Icon.png');
+    background-size: 30px 30px;
+    background-position: 0px 10px; 
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 10px 5px 10px 45px;
+}
